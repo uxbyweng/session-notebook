@@ -3,13 +3,9 @@
 **Date:** 28.11.2025  
 **Coach:** Roland Hufnagel
 
----
-
 ## Überblick
 
 Vormittagssession zu **Git**, **Versionierung**, **Markdown** und grundlegenden Arbeitsprozessen mit GitHub.
-
----
 
 ## Was ist Versionierung?
 
@@ -17,8 +13,6 @@ Vormittagssession zu **Git**, **Versionierung**, **Markdown** und grundlegenden 
 -   Entwickelt von **Linus Torvalds** (Linux-Erfinder).
 -   Git hat sich global als Standard etabliert.
 -   Jeder Commit basiert automatisch auf seinem direkten Vorgänger.
-
----
 
 ## Warum nutzen Entwickler Git?
 
@@ -28,16 +22,12 @@ Vormittagssession zu **Git**, **Versionierung**, **Markdown** und grundlegenden 
 -   Arbeiten in Teams über Branches & Pull Requests
 -   Teilen von Code über GitHub
 
----
-
 ## Git Grundkonzepte
 
 -   **Repository:** Projektordner, der von Git überwacht wird
 -   **Commit:** Speichert eine Änderungsversion
 -   **Branch:** Eigener Arbeitszweig
 -   **Remote:** Verbindung zu GitHub oder anderen Servern
-
----
 
 ## Commit Messages – Best Practices
 
@@ -60,14 +50,10 @@ Gute Commit Messages sind essenziell — sie sind ein nachvollziehbares Protokol
     - ✔️ _fix typo_
     - ❌ _replaced the letter a with e in the second word_
 
----
-
 ## Challenge
 
 **Erstelle dein eigenes GitHub-Profil**  
 → Profilbild, Bio, Technologien, Projekte, Social Links ergänzen.
-
----
 
 ## Markdown Basics (Kurzüberblick)
 
@@ -80,15 +66,12 @@ Gute Commit Messages sind essenziell — sie sind ein nachvollziehbares Protokol
 -   Links: `[Text](https://...)`
 -   Bilder: `![Alt Text](pfad.png)`
 
----
-
 ## Notizen
 
 -   Markdown eignet sich hervorragend für Dokumentationen & README-Dateien
 -   GitHub rendert Markdown automatisch
 -   Strukturierte Dokumentation gehört zum professionellen Arbeiten
 
----
 
 ## Zusammenfassung
 
