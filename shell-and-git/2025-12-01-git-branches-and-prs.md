@@ -1,35 +1,36 @@
 # Git Branches & Pull Requests (PRs)
 
-**Date:** 02.12.2025  
-**Coach:** Felix
+**Date:** 03.12.2025  
+**Coach:** Felix Kirchhoff
 
 ---
 
-## Git Branches – warum überhaupt?
+## Warum Branches?
 
-Wenn mehrere Leute an einem Projekt arbeiten, will niemand direkt im main-Branch herumfummeln. Branches lösen genau dieses Problem:
-Ich kann an meinem Feature arbeiten, ohne das Risiko, anderen den Code zu zerschießen.
+Wenn mehrere Leute an einem Projekt arbeiten, darf niemand direkt im main herumeditieren. Branches sorgen dafür, dass jede Änderung sauber getrennt bleibt.
+Ein Branch ist eine Abzweigung vom Hauptentwicklungsstrang (main):
+Er startet an einem Commit und entwickelt danach eine eigene Historie.
 
-Ein Branch ist im Grunde eine Abzweigung vom Hauptentwicklungsstrang. Er startet an einem bestimmten Commit, teilt sich danach ab und entwickelt eine eigene Historie.
+### Typischer Workflow
 
-### Typischer Workflow:
+1. Feature-Branch erstellen (z. B. für ein Feature)
+2. Auf dem Branch arbeiten und commits machen
+3. Feature fertigstellen → testen → reviewen lassen
+4. Branch in 'main' mergen
+5. 'main' bleibt stabil & sauber
 
-1. Neuen Branch erstellen – z. B. für ein Feature.
-2. Auf diesem Branch arbeiten und commits machen.
-3. Feature fertigstellen, testen, reviewen lassen.
-4. Branch in main mergen, wenn alles passt.
-5. Der main-Branch bleibt damit immer stabil und sauber.
+> Regel im Bootcamp: Wir arbeiten NIE auf main. Nie.
 
 ### Branch-Namen
 
-Kurze, beschreibende Namen sind Gold wert:
-Beispiele: contact-form, fix-navbar, add-darkmode
-Ich nutze immer Kleinbuchstaben und Bindestriche, weil es am lesbarsten ist.
+→ kurz, eindeutig, lesbar: 'contact-form', 'fix-navbar', 'add-darkmode'
+→ immer klein & mit Bindestrichen (weil es am lesbarsten ist).
 
 ### Git Branch Befehle
 
 | Befehl                   | Bedeutung                                      |
 | ------------------------ | ---------------------------------------------- |
+| `git checkout <branch>`  | neuen Branch erstellen                         |
 | `git switch -c <branch>` | neuen Branch erstellen **und** in ihn wechseln |
 | `git switch <branch>`    | zu bestehendem Branch wechseln                 |
 | `git branch`             | listet alle lokalen Branches                   |
@@ -38,14 +39,19 @@ Ich nutze immer Kleinbuchstaben und Bindestriche, weil es am lesbarsten ist.
 
 ### Pull Requests (PRs)
 
-Ein Pull Request ist eine Anfrage, einen Branch in einen anderen zu mergen – meistens in main.
-Dort findet der gesamte Review-Prozess statt: Kommentare, Vorschläge, Änderungen.
+Ein Pull Request ist eine Anfrage, einen Branch in einen anderen (meist main) zu mergen.
+Im PR passiert der komplette Review-Prozess:
 
-Erst wenn der PR genehmigt ist, wird gemergt. So bleibt der Code hochwertig und nachvollziehbar.
+-   Code ansehen
+-   Feedback geben
+-   Änderungen einfordern
+-   Kommentare, Diskussionen
 
-### Standard-Workflow für einen Pull Request
+Gemerget wird immer auf GitHub, idealerweise im Vier-Augen-Prinzip.
 
-1. Branch erstellen:
+### Standard-Workflow eines Pull Requests
+
+1. Branch erstellen und in ihn wechseln:
 
 ```bash
 git switch -c <branchname>
@@ -74,14 +80,21 @@ git pull
 
 9. Branch löschen – auf GitHub und lokal
 
-## 2. Was sind Git pull requests und wie benutzt man sie?
+## Wichtige Hinweise
 
--
--
+-   Der main-Branch wird nie direkt bearbeitet.
+-   Auf main finden ausschließlich merge commits statt.
+-   Jeder arbeitet ausschließlich auf seinem Feature-Branch.
+-   Merge-Vorgänge passieren ausschließlich auf GitHub.
+-   Best Practice: immer jemanden anderes mergen lassen (Review-Sicherheit).
 
-### Praktisch:
+### Typische Befehle
 
 ```bash
+git@github.com:uxbyweng/git-demo.git
+git remote add origin git@github.com:uxbyweng/git-demo.git
+
+git push -u origin maingit pull origin main
 
 ```
 
