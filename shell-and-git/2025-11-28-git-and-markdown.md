@@ -51,3 +51,14 @@ Gute Commit Messages sind essenziell — sie sind ein nachvollziehbares Protokol
 
 **Erstelle dein eigenes GitHub-Profil**  
 → Profilbild, Bio, Technologien, Projekte, Social Links ergänzen.
+
+## Markdown Basics (Kurzüberblick)
+
+-   Überschriften: `#`, `##`, `###`
+-   Listen: `-` oder `*`
+-   Codeblöcke:
+    ```javascript
+    console.log("Hello");
+    ```
+-   Links: `[Text](https://...)`
+-   Bilder: `![Alt Text](pfad.png)`
