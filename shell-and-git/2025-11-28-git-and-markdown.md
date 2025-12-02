@@ -46,3 +46,8 @@ Gute Commit Messages sind essenziell — sie sind ein nachvollziehbares Protokol
 6. **„Warum“ statt „wie“ beschreiben:**
     - ✔️ _fix typo_
     - ❌ _replaced the letter a with e in the second word_
+
+## Challenge
+
+**Erstelle dein eigenes GitHub-Profil**  
+→ Profilbild, Bio, Technologien, Projekte, Social Links ergänzen.
