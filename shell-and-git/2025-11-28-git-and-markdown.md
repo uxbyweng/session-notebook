@@ -62,3 +62,14 @@ Gute Commit Messages sind essenziell — sie sind ein nachvollziehbares Protokol
     ```
 -   Links: `[Text](https://...)`
 -   Bilder: `![Alt Text](pfad.png)`
+
+## Notizen
+
+-   Markdown eignet sich hervorragend für Dokumentationen & README-Dateien
+-   GitHub rendert Markdown automatisch
+-   Strukturierte Dokumentation gehört zum professionellen Arbeiten
+
+## Zusammenfassung
+
+Einführung in Git, Versionierungsideen, Commit-Qualität und Markdown-Grundlagen.  
+Wichtiger Fokus: **saubere Commit Messages** & grundlegendes Verständnis, warum Git essentiell ist.
